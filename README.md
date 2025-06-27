@@ -6,3 +6,4 @@ The quiz is multiple choice where the user must select the number of the asnwer 
 There have been major changes made to the file structure compared to parts 1 and 2, these changes include:
 Converting the code from 2 classes to 1
 Creating a new project to facilitate the WPF GUI Application.
+The link to access this document/code is: https://github.com/blackman-21/POE-Part3
