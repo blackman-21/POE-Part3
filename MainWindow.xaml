@@ -1,0 +1,42 @@
+﻿<Window x:Class="CyberSecurityChatbotGUI1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cybersecurity Chatbot" Height="600" Width="800"
+        Background="#1e1e2f">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <TextBlock Text="Cybersecurity Awareness Chatbot" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   Foreground="White" 
+                   Margin="0 0 0 10"
+                   HorizontalAlignment="Center"/>
+
+        <!-- Chat Display -->
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <TextBlock x:Name="ChatHistory" 
+                       TextWrapping="Wrap" 
+                       Foreground="White" 
+                       FontSize="16"
+                       Padding="5"/>
+        </ScrollViewer>
+
+        <!-- User Input and Control Buttons -->
+        <StackPanel Grid.Row="2" Orientation="Vertical" Margin="0 10 0 0">
+            <TextBox x:Name="UserInput" Height="30" FontSize="16" Margin="0 0 0 5"/>
+            <WrapPanel HorizontalAlignment="Center">
+                <Button Content="Send" Width="100" Margin="5" Click="Send_Click"/>
+                <Button Content="Add Task" Width="100" Margin="5" Click="AddTask_Click"/>
+                <Button Content="Start Quiz" Width="100" Margin="5" Click="StartQuiz_Click"/>
+                <Button Content="Show Log" Width="100" Margin="5" Click="ShowLog_Click"/>
+                <Button Content="Exit" Width="100" Margin="5" Click="Exit_Click"/>
+            </WrapPanel>
+        </StackPanel>
+    </Grid>
+</Window>
